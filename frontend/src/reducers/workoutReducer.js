@@ -15,7 +15,7 @@ export default function workoutReducer(state = {workouts: []}, action) {
             })
             return {...state, workouts: workouts}
         case 'DELETE_RECORDMARK':
-            let workoutsAfterBookmarkDelete = state.workouts.map(workout => {
+            let workoutsAfterRecordmarkDelete = state.workouts.map(workout => {
                 if (workout.id === action.payload.id) {
                     return action.payload
                 }
@@ -23,14 +23,14 @@ export default function workoutReducer(state = {workouts: []}, action) {
                     return workout
                 }
             })
-            return {...state, workouts: workoutsAfterBookmarkDelete}
-        case 'DELETE_WORKOUT':
-            let workoutsAfterDelete = state.workouts.filter(workout => {
-                if (workout.id !== action.payload.id) {
-                    return workout
-                }
-            })
-            return {...state, workouts: workoutsAfterDelete}
+            return {...state, workouts: workoutsAfterRecordmarkDelete}
+        // case 'DELETE_WORKOUT':
+        //     let workoutsAfterDelete = state.workouts.filter(workout => {
+        //         if (workout.id !== action.payload.id) {
+        //             return workout
+        //         }
+        //     })
+        //     return {...state, workouts: workoutsAfterDelete}
         default:
             return state
     }
