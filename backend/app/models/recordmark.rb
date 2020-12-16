@@ -1,0 +1,2 @@
+class Recordmark < ApplicationRecord
+end
