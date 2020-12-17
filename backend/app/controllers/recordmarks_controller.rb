@@ -3,12 +3,12 @@ class RecordmarksController < ApplicationController
     before_action :set_workout
     
     def index
-        @recordmarks = Workout.recordmarks
+        @recordmarks = @workout.recordmarks
         render json: @recordmarks
     end
 
     def show
-        @recordmark = @workout.recordmark.find(id: params[:id])
+        @recordmark = @workout.recordmarks.find(params[:id])
         render json: @recordmark
         # recordmark = Recordmark.find(params[:id])
         # render json: recordmark
