@@ -1,4 +1,5 @@
 class RecordmarksController < ApplicationController
+
     before_action :set_workout
     
     def index
@@ -43,4 +44,5 @@ class RecordmarksController < ApplicationController
     def recordmark_params
         params.require(:recordmark).permit(:name, :link, :notes, :workout_id)
     end
+
 end
