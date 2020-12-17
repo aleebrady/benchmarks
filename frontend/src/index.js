@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux'
 import 'bootstrap/dist/css/bootstrap.css'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+// import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {createStore, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk'
 import workoutReducer from './reducers/workoutReducer'

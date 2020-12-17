@@ -6,7 +6,7 @@ import {Button, ListGroup} from 'react-bootstrap'
 const Recordmarks = (props) => {
 
     const handleDelete = (recordmark) => {
-        props.deleteRecordmark(recordmark.id, recordmark.workout.id)
+        props.deleteRecordmark(recordmark.id, recordmark.workout_id)
     }
 
     return (

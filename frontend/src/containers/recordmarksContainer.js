@@ -40,7 +40,7 @@ class RecordmarksContainer extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        folders: state.workouts
+        workouts: state.workouts
     }
 }
 
