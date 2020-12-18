@@ -13,7 +13,7 @@ class WorkoutsController < ApplicationController
     end
 
     def create
-        byebug
+        # byebug
         @workout = Workout.new(workout_params)
         if @workout.save
             render json: @workout 
