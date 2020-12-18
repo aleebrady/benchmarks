@@ -15,6 +15,8 @@ class RecordmarkInput extends React.Component {
 
     handleOnSubmit = (event) => {
         event.preventDefault()
+        debugger
+        // console.log("this is happening")
         this.props.addRecordmark(this.state, this.props.workout.id)
         this.setState({name: "", link: "", notes: ""})
     }

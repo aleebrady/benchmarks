@@ -24,13 +24,13 @@ export default function workoutReducer(state = {workouts: []}, action) {
                 }
             })
             return {...state, workouts: workoutsAfterRecordmarkDelete}
-        // case 'DELETE_WORKOUT':
-        //     let workoutsAfterDelete = state.workouts.filter(workout => {
-        //         if (workout.id !== action.payload.id) {
-        //             return workout
-        //         }
-        //     })
-        //     return {...state, workouts: workoutsAfterDelete}
+        case 'DELETE_WORKOUT':
+            let workoutsAfterDelete = state.workouts.filter(workout => {
+                if (workout.id !== action.payload.id) {
+                    return workout
+                }
+            })
+            return {...state, workouts: workoutsAfterDelete}
         default:
             return state
     }

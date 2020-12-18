@@ -1,6 +1,6 @@
 export function addRecordmark(recordmark, workoutId) {
     return (dispatch) => {
-        fetch(`http://localhost:3001/workouts${workoutId}/recordmarks`, {
+        fetch(`http://localhost:3001/workouts/${workoutId}/recordmarks`, {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
