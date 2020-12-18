@@ -22,7 +22,7 @@ class RecordmarksContainer extends React.Component {
                         <React.Fragment>
                             <Row>
                                 <Col>
-                                    <RecordmarkInput {...routerProps} folder={this.props.folder}/>
+                                    <RecordmarkInput {...routerProps} workout={this.props.workout}/>
                                 </Col>
                                 <Col>
                                     <Container>
