@@ -20,6 +20,7 @@ class RecordmarksController < ApplicationController
     end
 
     def create
+        # byebug
         @recordmark = @workout.recordmarks.new(recordmark_params)
         if @recordmark.save
             render json: @workout
@@ -30,8 +31,8 @@ class RecordmarksController < ApplicationController
 
     def destroy 
         recordmark = Recordmark.find(params[:id])
-        folder = Folder.find(recordmark.workout_id)
-        bookmark.destroy
+        workout = Workout.find(recordmark.workout_id)
+        recordmark.destroy
         render json: workout
     end
 
