@@ -1,4 +1,3 @@
-
 import React from 'react'
 import WorkoutsContainer from './containers/workoutsContainer'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
