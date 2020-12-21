@@ -12,6 +12,8 @@ const Workouts = (props) => {
 
     return( 
         <div className="container">
+            <h1>All Workouts</h1>
+            <img src={process.env.PUBLIC_URL + "/barbell.png"} width="200" alt="logo" /><br></br>
             {props.workouts.map(workout =>
             <ListGroup>
                 <ListGroup.Item>

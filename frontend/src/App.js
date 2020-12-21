@@ -13,14 +13,14 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-        <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="/">Record Marks</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+          <Navbar bg="light" expand="lg">
+            <Navbar.Brand href="/">Home</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
+            <Nav.Link as={Link} to="/workouts">My Workouts</Nav.Link>
             <Nav.Link as={Link} to="/workouts/new">Create a Workout</Nav.Link>
             <Nav.Link as={Link} to="/recordmarks">All Recordmarks</Nav.Link>
-            <Nav.Link as={Link} to="/workouts">My Workouts</Nav.Link>
             <Nav.Link as={Link} to="/about">About</Nav.Link>
             </Nav>
           </Navbar.Collapse>

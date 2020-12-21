@@ -23,13 +23,15 @@ class WorkoutInput extends React.Component {
             <div className="container">
                 <Form onSubmit={this.handleOnSubmit}>
                     <Form.Group controlId="formBasicEmail">
-                        <Form.Label>Create a New Workout</Form.Label>
+                        <Form.Label><h1>Create a New Workout</h1></Form.Label>
                         <Form.Control type="text" name="name" onChange={this.handleOnChange} placeholder="Workout Name" value={this.state.name}/><br />
                         <Form.Control type="text" name="focus" onChange={this.handleOnChange} placeholder="focus" value={this.state.focus}/><br />
                         <Form.Control as="textarea" rows="3" name="description" onChange={this.handleOnChange} placeholder="Workout Description" value={this.state.description}/>
                     </Form.Group>
+                    <h4>Recommended Challenge:</h4>
+                    <img src={process.env.PUBLIC_URL + "/murph.png"} width="300" alt="logo" /><br></br>
                     <Button variant="primary" type="submit">
-                        Create Workout
+                        Submit New Workout
                     </Button>
                 </Form>
             </div>
