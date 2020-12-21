@@ -8,6 +8,7 @@ import {connect} from 'react-redux'
     1. react functional components
     2. react hooks
     3. react context api = kinda redux 
+    
 */
 
 const Workouts = ({ workouts, deleteWorkout }) => {
