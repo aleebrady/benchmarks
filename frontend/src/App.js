@@ -5,6 +5,7 @@ import {Navbar, Nav} from "react-bootstrap"
 import About from './components/about'
 import Home from './components/home'
 import RecordmarksContainer from './containers/recordmarksContainer'
+import './App.css'
 
 class App extends React.Component {
   
