@@ -13,15 +13,15 @@ class App extends React.Component {
     return (
       <div className="App">
         <Router>
-          <Navbar bg="light" expand="lg">
+          <Navbar expand="lg">
             <Navbar.Brand href="/">Home</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/workouts">My Workouts</Nav.Link>
-            <Nav.Link as={Link} to="/workouts/new">Create a Workout</Nav.Link>
-            <Nav.Link as={Link} to="/recordmarks">All Recordmarks</Nav.Link>
-            <Nav.Link as={Link} to="/about">About</Nav.Link>
+            <Nav.Link as={Link} to="/workouts"><strong>My Workouts</strong></Nav.Link>
+            <Nav.Link as={Link} to="/workouts/new"><strong>Create a Workout</strong></Nav.Link>
+            <Nav.Link as={Link} to="/recordmarks"><strong>All Recordmarks</strong></Nav.Link>
+            <Nav.Link as={Link} to="/about"><strong>About</strong></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar><br />
@@ -34,7 +34,5 @@ class App extends React.Component {
     )
   }
 }
-
-
 
 export default App;

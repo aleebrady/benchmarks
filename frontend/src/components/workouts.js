@@ -4,17 +4,23 @@ import {Button, ListGroup} from 'react-bootstrap'
 import {deleteWorkout} from '../actions/deleteWorkout'
 import {connect} from 'react-redux'
 
-const Workouts = (props) => {
+/*
+    1. react functional components
+    2. react hooks
+    3. react context api = kinda redux 
+*/
 
-    const handleDelete = (workout) => {
-        props.deleteWorkout(workout.id)
+const Workouts = ({ workouts, deleteWorkout }) => {
+
+    const handleDelete = ({ id }) => {
+        deleteWorkout(id)
     }
 
     return( 
         <div className="container">
             <h1>All Workouts</h1>
             <img src={process.env.PUBLIC_URL + "/barbell.png"} width="200" alt="logo" /><br></br>
-            {props.workouts.map(workout =>
+            {workouts.map(workout =>
             <ListGroup>
                 <ListGroup.Item>
                     <h5><Link to={`/workouts/${workout.id}`}>{workout.name}</Link></h5>
