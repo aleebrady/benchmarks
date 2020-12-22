@@ -28,6 +28,7 @@ class RecordmarkInput extends React.Component {
                     <Form.Group>
                     <ListGroup>
                     <ListGroup.Item><strong>Add a New Recordmark</strong></ListGroup.Item><br />
+                    <p><strong>* Do Not Forget to Link a video. No Video, it did not happen</strong></p>
                         </ListGroup>
    <Form.Control type="text" name="name" onChange={this.handleOnChange} placeholder="Name" value={this.state.name}/><br/>
                         <Form.Control type="text" name="link" onChange={this.handleOnChange} placeholder="Link" value={this.state.link}/><br/>
