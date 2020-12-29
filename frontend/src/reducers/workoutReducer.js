@@ -25,6 +25,7 @@ export default function workoutReducer(state = {workouts: []}, action) {
             })
             return {...state, workouts: workoutsAfterRecordmarkDelete}
         case 'DELETE_WORKOUT':
+            // eslint-disable-next-line
             let workoutsAfterDelete = state.workouts.filter(workout => {
                 if (workout.id !== action.payload.id) {
                     return workout

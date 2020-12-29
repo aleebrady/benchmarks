@@ -15,7 +15,11 @@ class WorkoutInput extends React.Component {
     handleOnSubmit = (event) => {
         event.preventDefault()
         this.props.addWorkout(this.state)
-        this.setState({name: "", focus: "", description: ""})
+        this.setState({
+            name: "", 
+            focus: "", 
+            description: ""
+        })
     }
 
     render() {

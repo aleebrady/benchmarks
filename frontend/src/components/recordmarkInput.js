@@ -7,7 +7,11 @@ import ListGroup from 'react-bootstrap/ListGroup'
 
 class RecordmarkInput extends React.Component {
 
-    state = {name: "", link: "", notes: ""}
+    state = {
+        name: "", 
+        link: "", 
+        notes: ""
+    }
 
     handleOnChange = (event) => {
         this.setState({[event.target.name]: event.target.value})

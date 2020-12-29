@@ -26,7 +26,8 @@ const Workouts = ({ workouts, deleteWorkout }) => {
                 <ListGroup.Item>
                     <h5><Link to={`/workouts/${workout.id}`}>{workout.name}</Link></h5>
                     <h6>{workout ? workout.recordmarks.length === 1 ? `${workout.recordmarks.length} Recordmark` : `${workout.recordmarks.length} Recordmarks` : null}</h6>
-                    <p><i>{workout.description}</i></p>
+                    <p><i><strong>Focus:</strong> {workout.focus}</i></p>
+                    <p><i><strong>Description:</strong> {workout.description}</i></p>
                     <Button variant="danger" onClick={e =>
                     window.confirm('Delete workout and all associated benchmarks?') &&
                     handleDelete(workout)
