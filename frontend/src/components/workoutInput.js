@@ -34,7 +34,10 @@ class WorkoutInput extends React.Component {
                     </Form.Group>
                     <h4>Recommended Challenge:</h4>
                     <img src={process.env.PUBLIC_URL + "/murph.png"} width="300" alt="logo" /><br></br>
-                    <Button variant="primary" type="submit">
+                    <Button variant="primary" onClick={ event =>
+                    window.alert("Workout added to workouts page")
+                    } 
+                    type="submit">
                         Submit New Workout
                     </Button>
                 </Form>
